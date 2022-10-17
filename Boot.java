@@ -1,8 +1,8 @@
 /*
- * Boot class (template)
- * Assignment 5: Bringing it All Together
- * @author R. Jordan Crouser + CSC120 (Fall '22))
- * @version 13 October 2022
+ * Boot class 
+ * prints out the left and right boots of the scarecrow using ASCII art
+ * @param String, stores direction of the boots
+ * @return left and right boots basesd on the direction given
  */
 public class Boot {
   
@@ -14,13 +14,13 @@ public class Boot {
     }
 
     /*
-     * TODO: Modify this method to print ASCII Art Boot
+     * prints ASCII Art Boot
      */
     public void display() {
         if (this.direction.equals("left")) {
-          System.out.println("Left boot?");
+          System.out.println("|______|");
         } else if (this.direction.equals("right")) {
-          System.out.println("Right boot?");
+          System.out.print("\t |______|");
         } else {
           System.out.println("Which boot?");
         }
